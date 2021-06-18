@@ -7,10 +7,32 @@ body {
     background-color: #f7f7f7
 }
 
+nav {
+    position: fixed;
+    top: -92px;
+    width: 100%;
+    height: 92px;
+    background-color: #f7f7f7;
+    color: #FFFFFF;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    transition: 0s;
+    opacity: 0;
+    z-index: 10;
+    
+}
+
+.displayNav {
+	top: 0px;
+	transition: 0s;
+    opacity: 1;
+}
+
 #landing {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     height: 100vh;
     width: 100%;
@@ -19,6 +41,7 @@ body {
 #landing #centered {
     margin: 0 auto;
     display: flex;
+    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
 }
@@ -26,10 +49,11 @@ body {
 #landing #centered img {
     height: 128px;
     border-radius: 50%;
+    margin-right: 2rem;
 }
 
-#landing #centered #content {
-    margin-left: 2rem;
+#intro {
+    max-width: 20rem;;
 }
 
 #header {
@@ -53,7 +77,7 @@ h1 {
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 20px;
   color: black;
   font-weight: normal;
 }
@@ -63,9 +87,15 @@ h3 {
     /* font-size: 16px; */
 }
 
+#landing-social {
+    position: absolute;
+    bottom: 2rem;
+}
+
   #social {
     display: table-cell;
     vertical-align: middle;
+    padding-top: 2rem;
   }
   
   #social ul {
@@ -83,16 +113,16 @@ h3 {
   /** email **/
   
   .email {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
   }
   
   .email .border {
     background: transparent;
     outline: none;
     color: #774ee0;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
     border-radius: 100px;
@@ -107,22 +137,22 @@ h3 {
   }
   
   .fa.fa-envelope {
-    font-size: 25px;
+    font-size: 20px;
   }
   
   /** linkedin **/
   
   .linkedin {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
   }
   
   .linkedin .border {
     background: transparent;
     outline: none;
     color: #774ee0;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
     border-radius: 100px;
@@ -137,22 +167,22 @@ h3 {
   }
   
   .fa.fa-linkedin {
-    font-size: 25px;
+    font-size: 20px;
   }
   
   /** github **/
   
   .github {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
   }
   
   .github .border {
     background: transparent;
     outline: none;
     color:#774ee0;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
     border-radius: 100px;
@@ -167,17 +197,39 @@ h3 {
   }
   
   .fa.fa-github {
-    font-size: 25px;
+    font-size: 20px;
   }
   
   #social ul li .border:hover {
     cursor: pointer;
   }
-  
-  /* #social ul:hover > li {
-    opacity: 0.5;
+
+  .fa.fa-angle-double-down {
+      color: #774ee0;
+      font-size: 20px;
+      /* position: absolute;
+      bottom: 2rem; */
+      /* -webkit-animation: action 0.7s infinite alternate;
+      animation: action 0.7s infinite alternate; */
   }
-  
-  #social ul:hover > li:hover {
-    opacity: 1;
-  } */
+  @-webkit-keyframes action {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+  @keyframes action {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+
+  /* Details */
+  #details {
+      height: 100vh;
+  }

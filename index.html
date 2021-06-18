@@ -9,38 +9,79 @@
     <title>Charles Ming</title>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+    <script src="index.js" defer></script>
 </head>
 <body>
-    <div id="landing">
-        <h3 id="header">
+    <!-- Navbar (hidden at first) -->
+    <header>
+        <nav>
             <div id="social">
                 <ul>
+                    <li class="email">
+                        <button class="border" onclick="location.href='mailto:charlesming@@berkeley.edu'" type="button"><i class="fa fa-envelope"></i></button>
+                    </li>
+                    <li>
+                        <i class="fa fa-angle-double-down"></i>
+                    </li>
+                
+                    <li class="linkedin">
+                        <button class="border" onclick="window.open('https://www.linkedin.com/in/charlesming/','_blank')"><i class="fa fa-linkedin"></i></button>
+                    </li>
+                
+                    <li>
+                        <i class="fa fa-angle-double-down"></i>
+                    </li>
+                    <li class="github">
+                        <button class="border" onclick="window.open('https://github.com/CharlesMing02','_blank')"><i class="fa fa-github"></i></button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Landing page -->
+    <div id="landing">
+        <h3 id="header">charles ming</h3>
+        <div id="centered">
+            <img src="./assets/IMG_0289.jpeg"/>
+            <div id="content">
+                <div>
+                    <h1>Welcome 👋</h1>
+                </div>
+                <div id="intro">
+                    <h2>I'm a student at UC Berkeley interested in full-stack software development.</h2>
+                </div>
+                
+            </div>
+        </div>
+        <div id="landing-social">
+        <div id="social">
+            <ul>
                 <li class="email">
                     <button class="border" onclick="location.href='mailto:charlesming@@berkeley.edu'" type="button"><i class="fa fa-envelope"></i></button>
+                </li>
+                <li>
+                    <i class="fa fa-angle-double-down"></i>
                 </li>
             
                 <li class="linkedin">
                     <button class="border" onclick="window.open('https://www.linkedin.com/in/charlesming/','_blank')"><i class="fa fa-linkedin"></i></button>
                 </li>
             
-                <li class="github">
-                    <button class="border" onclick="window.open('http://google.com','_blank')"><i class="fa fa-github"></i></button>
+                <li>
+                    <i class="fa fa-angle-double-down"></i>
                 </li>
-                </ul>
-            </div>
-        </h3>
-        <div id="centered">
-            <img src="./assets/IMG_0289.jpeg"/>
-            <div id="content">
-                <div>
-                    <h1>Hi! I'm Charles Ming 👋</h1>
-                </div>
-                <div>
-                    <h2>I'm a student at UC Berkeley interested in full-stack software development.</h2>
-                </div>
-
-            </div>
+                <li class="github">
+                    <button class="border" onclick="window.open('https://github.com/CharlesMing02','_blank')"><i class="fa fa-github"></i></button>
+                </li>
+            </ul>
         </div>
+        </div>
+    </div>
+
+    <!-- Second page -->
+    <div id="details">
+
     </div>
 </body>
 </html>
