@@ -4,14 +4,14 @@ html *, body * {
 
 body {
     font-family: 'Overpass';
-    background-color: #f7f7f7
+    background-color: #f7f7f7;
 }
 
 nav {
     position: fixed;
-    top: -92px;
+    top: -124px;
     width: 100%;
-    height: 92px;
+    height: 124px;
     background-color: #f7f7f7;
     color: #FFFFFF;
     display: flex;
@@ -20,7 +20,10 @@ nav {
     transition: 0s;
     opacity: 0;
     z-index: 10;
-    
+}
+
+nav #social {
+    padding-bottom: 32px;
 }
 
 .displayNav {
@@ -31,8 +34,7 @@ nav {
 
 #landing {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     height: 100vh;
     width: 100%;
@@ -41,9 +43,9 @@ nav {
 #landing #centered {
     margin: 0 auto;
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
+    max-width: 30rem;
 }
 
 #landing #centered img {
@@ -52,8 +54,19 @@ nav {
     margin-right: 2rem;
 }
 
-#intro {
-    max-width: 20rem;;
+@media only screen and (max-width: 850px) {
+    #landing #centered {
+        flex-direction: column;
+    }
+    #landing #centered img {
+        margin-bottom: 1rem;
+        margin-right: 0;
+    }
+    #landing #centered #content {
+        text-align: center;
+        margin: 0 auto;
+        max-width: 20rem;
+    }
 }
 
 #header {
@@ -85,6 +98,7 @@ h2 {
 h3 {
     color: #774ee0;
     /* font-size: 16px; */
+    margin-bottom: 1rem;
 }
 
 #landing-social {
@@ -230,6 +244,22 @@ h3 {
   }
 
   /* Details */
-  #details {
-      height: 100vh;
-  }
+#details {
+    height: 200vh;
+    width: 30rem;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 850px) {
+    #details {
+        width: 20rem;
+    }
+}
+
+.section {
+    margin-top: 6rem;
+}
+
+.section p {
+    margin-bottom: 2rem;
+}
