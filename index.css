@@ -245,8 +245,8 @@ h3 {
 
   /* Details */
 #details {
-    height: 200vh;
-    width: 30rem;
+    /* height: 200vh; */
+    width: 40rem;
     margin: 0 auto;
 }
 
@@ -257,9 +257,49 @@ h3 {
 }
 
 .section {
-    margin-top: 6rem;
+    margin-top: 4rem;
+}
+
+.section h3 {
+  margin-bottom: 1.1rem;
+  font-size: 1.2rem;
+  line-height: 150%;
 }
 
 .section p {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    line-height: 130%;
+}
+
+.section a {
+  color: #774ee0;
+  text-decoration: none;
+}
+
+.section b {
+  font-weight: 500;
+}
+
+/* .section ul li p {
+  margin-bottom: 0.5rem;
+} */
+
+.technologies {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #36454F;
+}
+
+.bottom {
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+}
+
+.bottom p {
+  font-size: 0.9rem;
+  color: #36454F;
+  text-align: center;
 }
